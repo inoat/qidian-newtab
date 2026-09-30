@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>添加到栖点</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><span class="mark">栖</span><div><strong>添加到栖点</strong><small>网址只保存在本机</small></div></header>
+  <form id="form">
+    <label>名称<input id="title" name="title" maxlength="80" required></label>
+    <label>网址<input id="url" name="url" maxlength="2048" required></label>
+    <label>分组<select id="group" name="group"></select></label>
+    <button type="submit">保存网址</button>
+  </form>
+  <p id="message" role="status"></p>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.0",
+  "icons": {
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "favicon",
+    "geolocation"
+  ],
+  "optional_permissions": [
+    "bookmarks"
+  ],
+  "optional_host_permissions": [
+    "https://api.open-meteo.com/*",
+    "https://newsnow.busiyi.world/*",
+    "https://www.yystv.cn/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "action": {
+    "default_title": "将当前网页添加到栖点",
+    "default_icon": {
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "default_locale": "zh_CN"
+}

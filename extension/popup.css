@@ -1,0 +1,13 @@
+:root { color-scheme: light; font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif; }
+* { box-sizing: border-box; }
+body { width: 325px; margin: 0; padding: 18px; color: #1c2b43; background: #f8faff; }
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.mark { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 11px; color: #0f3651; background: linear-gradient(135deg,#d5f4e7,#88cee7); font-weight: 800; font-size: 18px; }
+header strong { display: block; font-size: 15px; }
+header small { display: block; color: #78869b; margin-top: 2px; font-size: 11px; }
+label { display: block; margin-bottom: 11px; font-size: 12px; font-weight: 650; }
+input, select { display: block; width: 100%; margin-top: 5px; border: 1px solid #d3deeb; border-radius: 8px; padding: 9px 10px; background: white; color: #1c2b43; outline-color: #6cb8d5; font-size: 12px; }
+button { width: 100%; margin-top: 3px; border: 0; border-radius: 9px; padding: 10px; color: white; background: #396fd0; font-weight: 650; cursor: pointer; }
+button:hover { background: #285fc0; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+#message { min-height: 16px; margin: 10px 0 0; color: #557185; font-size: 11px; }

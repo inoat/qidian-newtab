@@ -1,0 +1,341 @@
+[
+  {
+    "id": "bilibili",
+    "name": "哔哩哔哩",
+    "domains": [
+      "bilibili.com"
+    ],
+    "file": "store-icons/bilibili.svg",
+    "background": "#fe65a6",
+    "fit": "contain",
+    "scale": 0.75,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/bilibili.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Bilibili",
+      "hex": "00A1D6",
+      "source": "https://www.bilibili.com"
+    },
+    "sha256": "11083f7fc9fa86ce9c2ab77a693112096417399c3cfa1cd49881c8191370533d"
+  },
+  {
+    "id": "baidu",
+    "name": "百度",
+    "domains": [
+      "baidu.com"
+    ],
+    "file": "store-icons/baidu.svg",
+    "background": "#2932e1",
+    "fit": "contain",
+    "scale": 0.72,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/baidu.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Baidu",
+      "hex": "2932E1",
+      "source": "https://www.baidu.com"
+    },
+    "sha256": "d53212e302c574a518c87169c77049733bae5578be2adeea37df200edf95d14b"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "domains": [
+      "github.com"
+    ],
+    "file": "store-icons/github.svg",
+    "background": "#181717",
+    "fit": "contain",
+    "scale": 0.78,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/github.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "GitHub",
+      "hex": "181717",
+      "source": "https://github.com/logos",
+      "guidelines": "https://github.com/logos"
+    },
+    "sha256": "57979bb764f0dbd057cc21ddbc92dd10bfaca086a44cb517ae26d63a03e4687b"
+  },
+  {
+    "id": "wikipedia",
+    "name": "维基百科",
+    "domains": [
+      "wikipedia.org"
+    ],
+    "file": "store-icons/wikipedia.svg",
+    "background": "#303b48",
+    "fit": "contain",
+    "scale": 0.77,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/wikipedia.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Wikipedia",
+      "hex": "000000",
+      "source": "https://commons.wikimedia.org/wiki/File:Wikipedia-logo-v2.svg"
+    },
+    "sha256": "1e808c12fa6bed4d917fe3a8a97f0ba7a3a0d15a7299c73204835205fce33d2e"
+  },
+  {
+    "id": "zhihu",
+    "name": "知乎",
+    "domains": [
+      "zhihu.com"
+    ],
+    "file": "store-icons/zhihu.svg",
+    "background": "#1772f6",
+    "fit": "contain",
+    "scale": 0.75,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/zhihu.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Zhihu",
+      "hex": "0084FF",
+      "source": "https://www.zhihu.com"
+    },
+    "sha256": "c4494e5f6e4ec756720036a8d7e66377019e913c67800d3410941f7086eea214"
+  },
+  {
+    "id": "xiaohongshu",
+    "name": "小红书",
+    "domains": [
+      "xiaohongshu.com"
+    ],
+    "file": "store-icons/xiaohongshu.svg",
+    "background": "#ff2442",
+    "fit": "contain",
+    "scale": 0.78,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/xiaohongshu.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Xiaohongshu",
+      "hex": "FF2442",
+      "source": "https://pro.xiaohongshu.com",
+      "aliases": {
+        "loc": {
+          "zh-CN": "小红书"
+        }
+      }
+    },
+    "sha256": "9060c843f1f1543d04951f977fdfad736845e952570c6d6607c7146fa55c5808"
+  },
+  {
+    "id": "google",
+    "name": "Google",
+    "domains": [
+      "google.com"
+    ],
+    "file": "store-icons/google.svg",
+    "background": "#4285f4",
+    "fit": "contain",
+    "scale": 0.7,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/google.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Google",
+      "hex": "4285F4",
+      "source": "https://partnermarketinghub.withgoogle.com",
+      "guidelines": "https://about.google/brand-resource-center/brand-elements/",
+      "aliases": {
+        "loc": {
+          "ko-KR": "구글"
+        }
+      }
+    },
+    "sha256": "138c0d140c35f1af63f9d870b3e4dd257750d4436194d9a0348b09fd552a3f4f"
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "domains": [
+      "youtube.com"
+    ],
+    "file": "store-icons/youtube.svg",
+    "background": "#ff0033",
+    "fit": "contain",
+    "scale": 0.78,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/youtube.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "YouTube",
+      "hex": "FF0000",
+      "source": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+      "guidelines": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors"
+    },
+    "sha256": "ae4c8174cbbab092213aa8dc973cd1ebe9f2ce21143322a9016e99e1ffeeffa1"
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "domains": [
+      "store.steampowered.com",
+      "steamcommunity.com"
+    ],
+    "file": "store-icons/steam.svg",
+    "background": "#162a3d",
+    "fit": "contain",
+    "scale": 0.78,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/steam.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Steam",
+      "hex": "000000",
+      "source": "https://partner.steamgames.com/doc/marketing/branding",
+      "guidelines": "https://partner.steamgames.com/doc/marketing/branding"
+    },
+    "sha256": "f3b58b4f5c90a57bbda6b353c758769d9c000c5b45bbc87a7ec96fe19798cb8c"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "domains": [
+      "deepseek.com"
+    ],
+    "file": "store-icons/deepseek.svg",
+    "background": "#5786fe",
+    "fit": "contain",
+    "scale": 0.8,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/deepseek.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "DeepSeek",
+      "hex": "5786FE",
+      "source": "https://www.deepseek.com"
+    },
+    "sha256": "9635cb8392f2cf20c7233535ab0fce4601f23b9813fb9da5d0b1b9cfe6542ba4"
+  },
+  {
+    "id": "arxiv",
+    "name": "arXiv",
+    "domains": [
+      "arxiv.org"
+    ],
+    "file": "store-icons/arxiv.svg",
+    "background": "#b31b1b",
+    "fit": "contain",
+    "scale": 0.77,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/arxiv.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "arXiv",
+      "hex": "B31B1B",
+      "source": "https://arxiv.org",
+      "guidelines": "https://arxiv.org/about/brand"
+    },
+    "sha256": "db5586e1e56a064b46c04498420d5db10b4336b95ba11fd9fa059796f3037412"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "domains": [
+      "notion.so",
+      "notion.com"
+    ],
+    "file": "store-icons/notion.svg",
+    "background": "#191919",
+    "fit": "contain",
+    "scale": 0.72,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/notion.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Notion",
+      "hex": "000000",
+      "source": "https://www.notion.so"
+    },
+    "sha256": "4a4588920919ca32af810f60c28126c25e720fa678148c2161d3cd283290775b"
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab",
+    "domains": [
+      "gitlab.com"
+    ],
+    "file": "store-icons/gitlab.svg",
+    "background": "#e76b30",
+    "fit": "contain",
+    "scale": 0.77,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/gitlab.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "GitLab",
+      "hex": "FC6D26",
+      "source": "https://about.gitlab.com/press/press-kit/",
+      "guidelines": "https://about.gitlab.com/handbook/marketing/corporate-marketing/brand-activation/trademark-guidelines/"
+    },
+    "sha256": "aaa123878d1cd699d7da863118aee4b80a18679ba598d1bc944374aba0c0211a"
+  },
+  {
+    "id": "stackoverflow",
+    "name": "Stack Overflow",
+    "domains": [
+      "stackoverflow.com"
+    ],
+    "file": "store-icons/stackoverflow.svg",
+    "background": "#f58025",
+    "fit": "contain",
+    "scale": 0.75,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/stackoverflow.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "Stack Overflow",
+      "hex": "F58025",
+      "source": "https://stackoverflow.design/brand/logo/",
+      "guidelines": "https://stackoverflow.com/legal/trademark-guidance"
+    },
+    "sha256": "f1dae12f30a6d05480b2f48f7e3953aaaaba344bad704b45c2068660f6e7947e"
+  },
+  {
+    "id": "mdnwebdocs",
+    "name": "MDN",
+    "domains": [
+      "developer.mozilla.org"
+    ],
+    "file": "store-icons/mdnwebdocs.svg",
+    "background": "#202734",
+    "fit": "contain",
+    "scale": 0.76,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/mdnwebdocs.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "MDN Web Docs",
+      "hex": "000000",
+      "source": "https://github.com/mdn/yari/blob/77e6cda02f7013219e9da27a00b9424085e60fdb/client/src/assets/mdn-logo.svg"
+    },
+    "sha256": "d49b0a0f7622d25a3f91c9652009afe078ba3d82c8295f7ff92b5c7f1814ac55"
+  },
+  {
+    "id": "v2ex",
+    "name": "V2EX",
+    "domains": [
+      "v2ex.com"
+    ],
+    "file": "store-icons/v2ex.svg",
+    "background": "#465369",
+    "fit": "contain",
+    "scale": 0.8,
+    "group": "extra",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/e01988cc57a3aca39621023f9881e9b733ebcd77/icons/v2ex.svg",
+    "license": "CC0-1.0 (Simple Icons); trademark rights remain with brand owner",
+    "metadata": {
+      "title": "V2EX",
+      "hex": "1F1F1F",
+      "source": "https://www.v2ex.com"
+    },
+    "sha256": "b0966cf017a4cb78aea07df67bef944d2210cf4a70d7d60e1c4c1683d7f0f7f1"
+  }
+]

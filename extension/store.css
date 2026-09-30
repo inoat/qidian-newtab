@@ -1,0 +1,15 @@
+.store-welcome {width:min(530px,calc(100vw - 36px));padding:30px;border:1px solid #ffffff70;border-radius:24px;background:#f9fcff;color:#233548;box-shadow:0 24px 80px #13263b35;}
+.store-welcome::backdrop {background:#18314950;backdrop-filter:blur(8px);}
+.welcome-logo {width:54px;height:54px;float:right;}
+.store-welcome h1 {font-size:25px;margin:2px 0 8px;}
+.welcome-intro {margin:0 0 24px;color:#6a7f91;}
+.store-welcome ul {list-style:none;padding:0;margin:0;display:grid;gap:18px;}
+.store-welcome li {display:grid;gap:5px;}
+.store-welcome li strong {font-size:14px;}
+.store-welcome li span {font-size:13px;line-height:1.75;color:#576b80;}
+.welcome-actions {display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:26px;}
+.welcome-actions a {font-size:13px;color:#237bd4;}
+.welcome-start {border:0;border-radius:11px;padding:12px 25px;background:#217deb;color:#fff;font-weight:600;}
+.store-privacy-link {color:#2178cb;}
+.weather-attribution {position:absolute;bottom:3px;left:12px;font-size:8px;color:inherit;opacity:.78;text-decoration:none;}
+.weather-panel .service-footer {bottom:15px;}

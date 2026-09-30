@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>栖点 · 新标签页</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="games.css">
+  <link rel="stylesheet" href="store.css">
+</head>
+<body class="light-wallpaper">
+  <div id="wallpaper" class="wallpaper wallpaper--mist"></div>
+  <div class="wallpaper-shade"></div>
+  <div class="app-shell">
+    <button id="sidebarEdge" class="sidebar-edge" type="button" aria-label="展开侧边栏" title="展开侧边栏"></button>
+    <aside class="sidebar" aria-label="分组导航">
+      <nav id="groupNav" class="group-nav"></nav>
+      <button id="addGroupButton" class="sidebar-button sidebar-button--add" type="button" title="添加分组" aria-label="添加分组">＋</button>
+      <div class="sidebar-spacer"></div>
+      <button id="searchSettingsButton" class="sidebar-button" type="button" title="搜索栏设置"><span class="sidebar-icon">⌕</span><span class="sidebar-label">搜索栏</span></button>
+      <button id="iconSettingsButton" class="sidebar-button" type="button" title="图标设置"><span class="sidebar-icon">▦</span><span class="sidebar-label">图标</span></button>
+      <button id="clockSettingsButton" class="sidebar-button" type="button" title="时间日期设置"><span class="sidebar-icon">◷</span><span class="sidebar-label">时间日期</span></button>
+      <button id="focusButton" class="sidebar-button" type="button" title="极简模式"><span class="sidebar-icon">◐</span><span class="sidebar-label">极简模式</span></button>
+      <button id="wallpaperButton" class="sidebar-button" type="button" title="主题壁纸"><span class="sidebar-icon">▧</span><span class="sidebar-label">主题壁纸</span></button>
+      <button id="settingsButton" class="sidebar-button" type="button" title="设置"><span class="sidebar-icon">⚙</span><span class="sidebar-label">设置</span></button>
+    </aside>
+
+    <main class="main-content">
+      <div class="top-tools">
+        <span id="localBadge" class="local-badge" title="布局和笔记只保存在当前浏览器">● 本地保存</span>
+        <button id="editGroupButton" class="top-tool" type="button" title="编辑当前分组">编辑分组</button>
+      </div>
+
+      <section class="hero" aria-label="时间和搜索">
+        <button id="clockButton" class="clock-button" type="button" title="切换极简模式">
+          <span id="clock" class="clock">00:00</span>
+          <span id="date" class="date"></span>
+        </button>
+        <form id="searchForm" class="search-bar" autocomplete="off">
+          <button id="engineButton" class="engine-button" type="button" aria-label="切换搜索引擎" title="切换搜索引擎"><span id="engineMark">必</span><span class="engine-chevron">⌄</span></button>
+          <input id="searchInput" type="search" placeholder="输入内容并搜索" aria-label="搜索内容" autocomplete="off" spellcheck="false">
+          <button id="searchButton" class="search-submit" type="submit" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button>
+          <div id="engineMenu" class="engine-menu" hidden></div>
+        </form>
+      </section>
+
+      <section id="dashboard" class="dashboard" tabindex="0" aria-label="新标签页内容，按 Shift 加 F10 打开添加菜单" aria-keyshortcuts="Shift+F10">
+        <span class="dashboard-keyboard-hint" aria-hidden="true">Shift + F10 添加内容</span>
+        <div class="dashboard-head">
+          <div><h1 id="groupTitle">主页</h1><p id="groupSubtitle">你的常用空间</p></div>
+        </div>
+        <div id="board" class="board"></div>
+      </section>
+
+      <div class="bottom-quote" id="bottomQuote" hidden>把常用的，留在眼前。</div>
+    </main>
+  </div>
+
+  <div id="modalBackdrop" class="modal-backdrop" hidden>
+    <section id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></section>
+  </div>
+  <div id="contextMenu" class="context-menu" role="menu" aria-label="操作菜单" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input id="backupInput" type="file" accept="application/json,.json" hidden>
+  <input id="holidayInput" type="file" accept="application/json,.json" hidden>
+  <input id="bookmarkInput" type="file" accept="text/html,.html,.htm" hidden>
+  <input id="wallpaperInput" type="file" accept="image/png,image/jpeg,image/webp,image/avif" hidden>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

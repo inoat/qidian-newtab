@@ -1,0 +1,52 @@
+import assert from 'node:assert/strict';
+import { createDefaultState, normalizeState, BACKUP_VERSION } from '../extension/storage.js';
+import { createBackupDocument, readBackupDocument, referencedImageIds, summarizeWorkspace } from '../extension/backup-format.js';
+import { normalizeHolidayYears, parseHolidayFile, upcomingHolidays } from '../extension/holidays.js';
+
+const state = createDefaultState();
+assert.equal(state.version, 6);
+assert.equal(BACKUP_VERSION, 2);
+assert.equal(state.appearance.layoutMode, 'organized');
+assert.equal(state.appearance.autoText, true);
+state.appearance.wallpaperDim = .17;
+state.appearance.clockMode = 'custom';
+state.appearance.clockColor = '#aabbcc';
+state.appearance.clockShadow = 5;
+state.wallpaper = { kind:'local', id:'', assetId:'wallpaper-image' };
+const website = state.groups[0].items.find(item => item.type === 'shortcut');
+website.assetId = 'custom-icon';
+const folder = state.groups[0].items.find(item => item.type === 'folder');
+folder.children[0].assetId = 'folder-icon';
+const weather = state.groups[0].items.find(item => item.kind === 'weather');
+weather.w = 6; weather.h = 3;
+state.holidayYears = normalizeHolidayYears({ 2027: {
+  source:'官方通知',holidays:[{name:'元旦',date:'2027-01-01',range:'1.1–1.3'}]
+} });
+const images = { 'wallpaper-image':'data:image/png;base64,AA==', 'custom-icon':'data:image/png;base64,AA==',
+  'folder-icon':'data:image/png;base64,AA==' };
+assert.deepEqual(referencedImageIds(state).sort(), ['custom-icon','folder-icon','wallpaper-image']);
+const backup = createBackupDocument(state, images, '2026-09-28T10:00:00.000Z');
+assert.equal(backup.format, 'qidian-workspace');
+assert.equal(backup.overview.groups, 3);
+assert.equal(backup.overview.images, 3);
+assert.equal(backup.overview.websites, 8);
+const parsed = readBackupDocument(JSON.parse(JSON.stringify(backup)));
+const restored = normalizeState(parsed.workspace);
+assert.equal(restored.wallpaper.assetId, 'wallpaper-image');
+assert.equal(restored.groups[0].items.find(item=>item.type==='shortcut').assetId, 'custom-icon');
+assert.equal(restored.groups[0].items.find(item=>item.type==='folder').children[0].assetId, 'folder-icon');
+assert.equal(restored.groups[0].items.find(item=>item.kind==='weather').w, 6);
+assert.equal(restored.groups[0].items.find(item=>item.kind==='weather').h, 3);
+assert.equal(restored.appearance.wallpaperDim, .17);
+assert.equal(restored.appearance.clockMode, 'custom');
+assert.equal(restored.appearance.clockColor, '#aabbcc');
+assert.equal(restored.appearance.clockShadow, 5);
+assert.equal(restored.holidayYears[2027].holidays[0].range, '1.1–1.3');
+assert.equal(summarizeWorkspace(restored,3).websites, backup.overview.websites);
+assert.throws(()=>readBackupDocument({...backup,images:{}}),/缺少/);
+const legacy = readBackupDocument({app:'qidian-local-newtab',backupVersion:1,state,images});
+assert.equal(legacy.legacy,true);
+assert.equal(parseHolidayFile({year:2028,holidays:[{name:'元旦',date:'2028-01-01',range:'待公布'}]}).year,2028);
+assert.deepEqual(normalizeHolidayYears({2028:{holidays:[{name:'无效',date:'2028-02-30',range:''}]}}),{});
+assert.equal(upcomingHolidays(state.holidayYears,new Date('2026-12-31T12:00:00')).at(0).range,'1.1–1.3');
+console.log('PASS: readable backup round-trip, referenced images, layout settings, and yearly holiday data');
