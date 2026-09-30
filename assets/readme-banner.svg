@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">栖点 · 本地新标签页</title>
+<desc id="desc">把常用的，留在眼前。Microsoft Edge 新标签页扩展。</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8f4f0"/><stop offset="1" stop-color="#e6edf8"/></linearGradient>
+  <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#79e2da"/><stop offset="1" stop-color="#5166f2"/></linearGradient>
+  <linearGradient id="hill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7ec6bc"/><stop offset="1" stop-color="#97aee4"/></linearGradient>
+</defs>
+<rect width="1200" height="300" rx="24" fill="url(#paper)"/>
+<g fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"><circle cx="1080" cy="124" r="168"/><circle cx="1080" cy="124" r="202"/><circle cx="1080" cy="124" r="236"/></g>
+<circle cx="1104" cy="234" r="118" fill="#d5e9e7"/>
+<g transform="translate(60 92) scale(.78)">
+ <rect width="128" height="128" rx="30" fill="#0b1931"/>
+ <path d="M26 78c15-27 31-39 48-35 15 3 24 19 28 43-14-11-27-14-39-8-14 8-26 8-37 0Z" fill="url(#mark)"/>
+ <circle cx="90" cy="40" r="9" fill="#fff4c9"/>
+</g>
+<g font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+ <text x="190" y="106" font-size="13" letter-spacing="3" fill="#507980">QIDIAN · LOCAL NEW TAB</text>
+ <text x="187" y="165" font-size="48" font-weight="700" fill="#213847">栖点</text>
+ <text x="310" y="163" font-size="24" fill="#3a5967">把常用的，留在眼前。</text>
+ <text x="190" y="206" font-size="17" fill="#55727e">网址 · 壁纸 · 小组件 · 完整本地备份</text>
+ <rect x="60" y="249" width="114" height="28" rx="14" fill="#ffffff" opacity=".75"/>
+ <text x="117" y="268" text-anchor="middle" font-size="12" fill="#436776">Microsoft Edge</text>
+ <rect x="184" y="249" width="112" height="28" rx="14" fill="#ffffff" opacity=".75"/>
+ <text x="240" y="268" text-anchor="middle" font-size="12" fill="#436776">Manifest V3</text>
+ <rect x="306" y="249" width="75" height="28" rx="14" fill="#ffffff" opacity=".75"/>
+ <text x="343.5" y="268" text-anchor="middle" font-size="12" fill="#436776">v1.0.0</text>
+</g>
+<g transform="translate(886 55)">
+ <rect x="0" y="0" width="230" height="164" rx="22" fill="#ffffff" opacity=".6"/>
+ <circle cx="157" cy="49" r="21" fill="#f4e5b5"/>
+ <path d="M14 130C61 51 108 39 150 95C175 127 198 130 216 106V150H14Z" fill="url(#hill)" opacity=".85"/>
+ <path d="M14 140C69 116 116 155 164 131C186 120 201 123 216 136V150H14Z" fill="#456c8b" opacity=".45"/>
+ <circle cx="19" cy="215" r="4" fill="#89b9ba"/><path d="M35 215H214" stroke="#aac4cf" stroke-width="2"/>
+</g>
+</svg>
